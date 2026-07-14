@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weather Journal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="bg-image" id="bgImage"></div>
+
+<div class="app">
+    <h1>Weather Journal</h1>
+
+    <div class="search">
+        <input type="text" id="cityInput" placeholder="Type a city name">
+        <button onclick="getWeather()">Check</button>
+    </div>
+
+    <div class="card" id="weatherCard">
+        <div class="top-row">
+            <div>
+                <h2 id="cityName"></h2>
+                <p id="date"></p>
+            </div>
+            <img id="weatherIcon" />
+        </div>
+
+        <div class="temp" id="temperature"></div>
+        <p id="description" class="desc"></p>
+
+        <div class="bottom-row">
+            <div class="box">
+                <span>Humidity</span>
+                <p id="humidity"></p>
+            </div>
+            <div class="box">
+                <span>Wind</span>
+                <p id="wind"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
